@@ -1,0 +1,16 @@
+_id,username,password,role
+66bf45774e58657675e9f7f8,Pamella BJ,$2b$12$0WU3quAFKxr0cXjATgQOGu4HvGCULV0R8uieGdxgLKFk/J5BZXA2y,admin
+66bf7fd26fb92d9bc0968773,invigilator,$2b$12$bGYTulgQyJ1Q9DTWYW6JWeNs2qcKP.E0KPbpd/homlBjHrxFXSf9O,staff
+66bf820dfb251eb15d62eef7,staff,$2b$12$iS0OOfXzbMmbnwTdL519BuOkU2X/2i9bZ7H7Fal8Yzksi1IOdv5MK,staff
+66bf820dfb251eb15d62eef8,admin,$2b$12$vMT.qCtVaHqCET3MpgCeMOB4Xb6HxM2e./.9e/2bBgvrwAItFNZdC,admin
+66bf828af91983e1561fe227,Paga SN,$2b$12$Vno2Sm/nGOcb5q2f18VD0.J1iq3twpA8BW1gs0kURyAg/WscUCEgi,staff
+66bf828af91983e1561fe228,Erick GD,$2b$12$YhYGdfnE/Tqn5K6LFekEaOVUKJHRMLSlHrr60EiC8G7smTLpgU1Zu,admin
+66c8893023c0bb03b8db7646,Harris Nkindwa,$2b$12$75qqu3xgsOgiEga0Fs5xR..LxiA5Ji4PoMyiC9aIGexmpZMIGCt0u,staff
+66cc9614ef7abf0dc80f2d81,ViniJr,$2b$12$lttYdsbL0EeQ5.BRTVxRL.7JmoqQ04STh8YutF9BpXRBGU.XJBs/2,staff
+66cc9658ef7abf0dc80f2d82,ChamaCC,$2b$12$88B8Y5CllVW/kuM6sPRF3ORQ.Z55.tsr6efXNCF4XTI//C4RBLxym,staff
+66cd7a1499a09d8b4fc2e268,John Kasusuli,$2b$12$pv4pZqkr/FP7fAQztA6R0OXemUdEGADoTZy1sZeCw5oFqoP6wfqlC,staff
+66cd7a5499a09d8b4fc2e269,John Kasusuli,$2b$12$Li4gi5Ixg5y7/Wg/leirsO67YBYbjkxxPGlayZOUMue2MaIhfydau,staff
+66cd7ebe99a09d8b4fc2e26a,T22-03-14264,$2b$12$bd4PkTddI14CGOAvMjhrhOrrRAz00OMmCJ7oOolI9tWvNQjEOuawu,staff
+66cd7eef99a09d8b4fc2e26b,John Kasusuli,$2b$12$7iiteZyao0L.Gh8HftJ.4OiNkwcLKFDQZnLSkoM5X7V./AtC6WRVK,staff
+66cd9e9699a09d8b4fc2e26c,John Kasusuli,$2b$12$Y2WZOBSajtBfli6HgAAe7OVCO3YC5vor.FpFzI8LlhNDQvDDegmqW,staff
+66cd9eb799a09d8b4fc2e26d,juma pondamali,$2b$12$zBYd/YjENuErxRwFl.N/uuTueHSHh2xIuQqNfEustCfBjIA15QU4K,staff
