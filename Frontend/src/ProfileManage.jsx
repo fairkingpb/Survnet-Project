@@ -21,7 +21,7 @@ const ProfileManage = ({ isSideNavExpanded }) => {
     axios.post('http://localhost:5000/survnet-new/users', newUser)
       .then(response => {
         console.log('User created:', response.data);
-        setUsers([...users, newUser]);  // Update the users list with the new user
+        setUsers([...users, response.data.user]);  // Update the users list with the new user
         setNewUser({ username: '', password: '' });  // Reset form
       })
       .catch(error => console.error('Error creating user:', error));

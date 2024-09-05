@@ -3,9 +3,8 @@ import { AppBar, Toolbar, Typography, Box, IconButton, Menu, MenuItem, Divider }
 import { User, LogOut, Settings, UserCircle, Bell } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useAuth } from './AuthContext'; // Import the useAuth hook
-import { 
-  Users
-} from 'lucide-react';
+import { Users } from 'lucide-react';
+import { Security, CameraAlt } from '@mui/icons-material'; // Import Security and Camera Icons
 
 const TopNav = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -28,9 +27,13 @@ const TopNav = () => {
   return (
     <AppBar position="fixed" sx={{ backgroundColor: '#12B76A', zIndex: (theme) => theme.zIndex.drawer + 1 }}>
       <Toolbar sx={{ justifyContent: 'space-between' }}>
-        <Typography variant="h6" color="white" sx={{ fontWeight: 'bold' }}>
-          SURVNET
-        </Typography>
+        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+          {/* Combined Shield and Camera icons */}
+          <Security sx={{ color: 'white', mr: 0.5 }} />
+          <Typography variant="h6" color="white" sx={{ fontWeight: 'bold' }}>
+            SURVNET
+          </Typography>
+        </Box>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <IconButton color="inherit" sx={{ mr: 2 }}>
             <Bell size={20} />

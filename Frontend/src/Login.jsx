@@ -14,11 +14,9 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      //const response = await axios.post('http://localhost:5000/survnet-new/Login', { username, password });
-  
-      const API_BASE_URL = 'http://172.16.64.80:5000';
+      // Use localhost for local development
+      const API_BASE_URL = 'http://localhost:5000';
       const response = await axios.post(`${API_BASE_URL}/survnet-new/Login`, { username, password });
-
 
       if (response.status === 200) {
         const { user } = response.data;
@@ -26,8 +24,7 @@ const Login = () => {
         setUser({ username: user.username, role: user.role });
         navigate('/');
       }
-    }
-    catch (error) {
+    } catch (error) {
       if (error.response) {
         console.error('Server responded with an error:', error.response.data);
         alert(`Server error: ${error.response.data.message}`);
