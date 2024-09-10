@@ -3,8 +3,8 @@ import { Box, Button, Grid, Paper, Typography } from '@mui/material';
 
 // LiveFeed Component
 const LiveFeed = ({ cameraNumber, onClick, isSelected }) => {
-  // Video source path based on cameraNumber
-  const videoSrc = `/camera${cameraNumber}.mp4`;
+  // Video source path based on cameraNumber, updated to match Flask endpoint
+  const videoSrc = `http://localhost:5000/video/camera${cameraNumber}.mp4`;
 
   return (
     <Paper
@@ -62,7 +62,7 @@ const LiveMonitoring = ({ isSideNavExpanded }) => {
   return (
     <Box
       sx={{
-        marginLeft: isSideNavExpanded ? '180px' : '50px',
+        marginLeft: isSideNavExpanded ? '200px' : '64px',
         padding: 3,
         backgroundColor: 'white',
         minHeight: '100vh',
@@ -115,7 +115,7 @@ const LiveMonitoring = ({ isSideNavExpanded }) => {
         <Box
           sx={{
             position: 'fixed',
-            top: 0,
+            top: 30,
             left: 0,
             width: '100%',
             height: '100%',
@@ -123,7 +123,7 @@ const LiveMonitoring = ({ isSideNavExpanded }) => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            zIndex: 1000,
+            zIndex: 1200,
           }}
         >
           <Paper
@@ -137,6 +137,7 @@ const LiveMonitoring = ({ isSideNavExpanded }) => {
               flexDirection: 'column',
               justifyContent: 'center',
               alignItems: 'center',
+              zIndex: 1300,
             }}
           >
             <Typography variant="h4" gutterBottom>Camera {selectedFeed}</Typography>
@@ -154,7 +155,7 @@ const LiveMonitoring = ({ isSideNavExpanded }) => {
                 width="100%"
                 height="100%"
                 controls
-                src={`/camera${selectedFeed}.mp4`}
+                src={`http://localhost:5000/video/camera${selectedFeed}.mp4`}
                 style={{ objectFit: 'cover' }} // Adjust video fit
               />
             </Box>

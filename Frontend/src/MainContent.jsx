@@ -4,9 +4,10 @@ import RecentAlertsChart from './RecentAlertsChart'; // Assuming you have create
 import LiveStatisticsChart from './LiveStatisticsChart'; // Assuming you have created this component
 import SystemHealthChart from './SystemHealthChart'; // Assuming you have created this component
 
+// LiveFeed Component
 const LiveFeed = ({ cameraNumber, onClick, isSelected }) => {
-  // Video source path based on cameraNumber
-  const videoSrc = `/camera${cameraNumber}.mp4`;
+  // Video source path based on cameraNumber, updated to match Flask endpoint
+  const videoSrc = `http://localhost:5000/video/camera${cameraNumber}.mp4`;
 
   return (
     <Paper
@@ -19,7 +20,7 @@ const LiveFeed = ({ cameraNumber, onClick, isSelected }) => {
         justifyContent: 'center',
         alignItems: 'center',
         cursor: 'pointer',
-        backgroundColor: isSelected ? '#d0f0c0' : 'white',
+        backgroundColor: isSelected ? '#d0f0c0' : 'white', // Highlight background if selected
       }}
       onClick={onClick}
     >
@@ -45,6 +46,7 @@ const LiveFeed = ({ cameraNumber, onClick, isSelected }) => {
     </Paper>
   );
 };
+
 
 const MainContent = ({ isSideNavExpanded }) => {
   const [selectedRoom, setSelectedRoom] = useState('All Rooms');
@@ -132,7 +134,7 @@ const MainContent = ({ isSideNavExpanded }) => {
         <Box
           sx={{
             position: 'fixed',
-            top: 0,
+            top: 30,
             left: 0,
             width: '100%',
             height: '100%',
@@ -140,7 +142,7 @@ const MainContent = ({ isSideNavExpanded }) => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            zIndex: 1000,
+            zIndex: 1200,
           }}
         >
           <Paper

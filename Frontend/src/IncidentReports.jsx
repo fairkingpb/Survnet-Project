@@ -48,7 +48,7 @@ const IncidentReports = ({ isSideNavExpanded }) => {
   return (
     <Box
       sx={{
-        marginLeft: isSideNavExpanded ? '180px' : '60px', // Adjust margin based on SideNav state
+        marginLeft: isSideNavExpanded ? '200px' : '65px', // Adjust margin based on SideNav state
         padding: 3,
         backgroundColor: 'white',
         minHeight: '100vh',

@@ -27,9 +27,9 @@ const TopNav = () => {
   return (
     <AppBar position="fixed" sx={{ backgroundColor: '#12B76A', zIndex: (theme) => theme.zIndex.drawer + 1 }}>
       <Toolbar sx={{ justifyContent: 'space-between' }}>
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          {/* Combined Shield and Camera icons */}
-          <Security sx={{ color: 'white', mr: 0.5 }} />
+        <Box sx={{ display: 'flex', alignItems: 'center' , marginLeft: 4}}>
+          {/* Combined Shield and Camera icons 
+          <Security sx={{ color: 'white', mr: 0.5 }} /> */}
           <Typography variant="h6" color="white" sx={{ fontWeight: 'bold' }}>
             SURVNET
           </Typography>

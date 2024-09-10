@@ -35,17 +35,18 @@ const SideNav = ({ isExpanded, onToggle }) => {
         onClick={onToggle}
         sx={{
           position: 'fixed',
-          top: 64,
-          left: isExpanded ? 180 : 50,
-          zIndex: 1100,
+          color: 'white',
+          top: 11,
+          left: isExpanded ? 5 : 5,
+          zIndex: 2100,
           transition: 'left 0.3s ease',
-          backgroundColor: '#e9f2ee',
-          borderRadius: 1,
+          backgroundColor: '#12B76A',
+          borderRadius: 5,
           width: 40,
           height: 40,
         }}
       >
-        <MenuIcon size={20} />
+        <MenuIcon size={70} />
       </IconButton>
       <Box
         sx={{
@@ -53,7 +54,7 @@ const SideNav = ({ isExpanded, onToggle }) => {
           height: 'calc(100vh - 64px)', // Subtract the height of TopNav
           backgroundColor: '#e9f2ee',
           position: 'fixed',
-          top: 64, // Start below TopNav
+          top: 65, // Start below TopNav
           left: 0,
           boxShadow: '2px 0px 5px rgba(0,0,0,0.1)',
           display: 'flex',
